@@ -1,0 +1,1350 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024/"
+     xml:base="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:KRST_2024="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#isManagerOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#isManagerOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Coach"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Team"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#isOwnerOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#isOwnerOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#President"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Team"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#playFor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#playFor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Player"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Team"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#playInStadium -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#playInStadium">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Team"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Stadium"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#playsIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#playsIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Team"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#LeagueAndCup"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#takePlace -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#takePlace">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#LeagueAndCup"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Country"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#FoundationYear -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#FoundationYear">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Team"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#age -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#age">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#capacity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#capacity">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Stadium"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#goal -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#goal">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#hasPosition -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#hasPosition">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#hasSalary -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#hasSalary">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#numberTeams -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#numberTeams">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#LeagueAndCup"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Coach -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Coach">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Country -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Country"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#International -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#International">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#LeagueAndCup"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#National"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#LeagueAndCup -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#LeagueAndCup"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#National -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#National">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#LeagueAndCup"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Person"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Player -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Player">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#President -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#President">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Stadium -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Stadium">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Team"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Team -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Team">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Adolf_Hütter -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Adolf_Hütter">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Coach"/>
+        <KRST_2024:isManagerOf rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Monaco"/>
+        <KRST_2024:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">54</KRST_2024:age>
+        <KRST_2024:hasSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1000000</KRST_2024:hasSalary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Adrien_Rabiot -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Adrien_Rabiot">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Player"/>
+        <KRST_2024:playFor rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Juventus"/>
+        <KRST_2024:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">29</KRST_2024:age>
+        <KRST_2024:goal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</KRST_2024:goal>
+        <KRST_2024:hasPosition>centrocampista</KRST_2024:hasPosition>
+        <KRST_2024:hasSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7000000</KRST_2024:hasSalary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Alessandro_Bastoni -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Alessandro_Bastoni">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Player"/>
+        <KRST_2024:playFor rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Inter"/>
+        <KRST_2024:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</KRST_2024:age>
+        <KRST_2024:goal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</KRST_2024:goal>
+        <KRST_2024:hasPosition>difensore</KRST_2024:hasPosition>
+        <KRST_2024:hasSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5500000</KRST_2024:hasSalary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Allianz_Arena -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Allianz_Arena">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Stadium"/>
+        <KRST_2024:capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">75024</KRST_2024:capacity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Allianz_Stadium -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Allianz_Stadium">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Stadium"/>
+        <KRST_2024:capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">41507</KRST_2024:capacity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Alphonso_Davies -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Alphonso_Davies">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Player"/>
+        <KRST_2024:playFor rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Bayern_Monaco"/>
+        <KRST_2024:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">23</KRST_2024:age>
+        <KRST_2024:goal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</KRST_2024:goal>
+        <KRST_2024:hasPosition>difensore</KRST_2024:hasPosition>
+        <KRST_2024:hasSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4500000</KRST_2024:hasSalary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Anfield -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Anfield">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Stadium"/>
+        <KRST_2024:capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">61276</KRST_2024:capacity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Arsenal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Arsenal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Team"/>
+        <KRST_2024:playInStadium rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Emirates_Stadium"/>
+        <KRST_2024:playsIn rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#ChampionsLeague"/>
+        <KRST_2024:playsIn rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#FACup"/>
+        <KRST_2024:playsIn rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#PremiereLeague"/>
+        <KRST_2024:FoundationYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1886</KRST_2024:FoundationYear>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Atletico_Madrid -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Atletico_Madrid">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Team"/>
+        <KRST_2024:playInStadium rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Cívitas_Metropolitano"/>
+        <KRST_2024:playsIn rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#ChampionsLeague"/>
+        <KRST_2024:playsIn rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#LigaBBVA"/>
+        <KRST_2024:FoundationYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1903</KRST_2024:FoundationYear>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Aurelio_De_Laurentiis -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Aurelio_De_Laurentiis">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#President"/>
+        <KRST_2024:isOwnerOf rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Napoli"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Barcellona -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Barcellona">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Team"/>
+        <KRST_2024:playInStadium rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Camp_Nou"/>
+        <KRST_2024:playsIn rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#ChampionsLeague"/>
+        <KRST_2024:playsIn rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#LigaBBVA"/>
+        <KRST_2024:FoundationYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1899</KRST_2024:FoundationYear>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#BayArena -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#BayArena">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Stadium"/>
+        <KRST_2024:capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30210</KRST_2024:capacity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Bayer_Leverkusen -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Bayer_Leverkusen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Team"/>
+        <KRST_2024:playInStadium rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#BayArena"/>
+        <KRST_2024:playsIn rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Bundesliga"/>
+        <KRST_2024:playsIn rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#EuropaLeague"/>
+        <KRST_2024:FoundationYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1904</KRST_2024:FoundationYear>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Bayern_Monaco -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Bayern_Monaco">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Team"/>
+        <KRST_2024:playInStadium rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Allianz_Arena"/>
+        <KRST_2024:playsIn rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Bundesliga"/>
+        <KRST_2024:playsIn rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#ChampionsLeague"/>
+        <KRST_2024:FoundationYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1900</KRST_2024:FoundationYear>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Bremer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Bremer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Player"/>
+        <KRST_2024:playFor rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Juventus"/>
+        <KRST_2024:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">27</KRST_2024:age>
+        <KRST_2024:goal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</KRST_2024:goal>
+        <KRST_2024:hasPosition>Difensore</KRST_2024:hasPosition>
+        <KRST_2024:hasSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">500000</KRST_2024:hasSalary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Bundesliga -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Bundesliga">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#National"/>
+        <KRST_2024:takePlace rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Germany"/>
+        <KRST_2024:numberTeams rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</KRST_2024:numberTeams>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Camp_Nou -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Camp_Nou">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Stadium"/>
+        <KRST_2024:capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">99354</KRST_2024:capacity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#CarabaoCup -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#CarabaoCup">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#National"/>
+        <KRST_2024:takePlace rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#England"/>
+        <KRST_2024:numberTeams rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">45</KRST_2024:numberTeams>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Carlo_Ancelotti -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Carlo_Ancelotti">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Coach"/>
+        <KRST_2024:isManagerOf rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Real_Madrid"/>
+        <KRST_2024:age rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">64</KRST_2024:age>
+        <KRST_2024:hasSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6000000</KRST_2024:hasSalary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#ChampionsLeague -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#ChampionsLeague">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#International"/>
+        <KRST_2024:takePlace rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Europe"/>
+        <KRST_2024:numberTeams rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">36</KRST_2024:numberTeams>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Claudio_Lotito -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Claudio_Lotito">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#President"/>
+        <KRST_2024:isOwnerOf rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Lazio"/>
+        <KRST_2024:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">66</KRST_2024:age>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Cívitas_Metropolitano -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Cívitas_Metropolitano">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Stadium"/>
+        <KRST_2024:capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">70460</KRST_2024:capacity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Dan_Friedkin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Dan_Friedkin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#President"/>
+        <KRST_2024:isOwnerOf rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Roma"/>
+        <KRST_2024:age rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">59</KRST_2024:age>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Daniele_De_Rossi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Daniele_De_Rossi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Coach"/>
+        <KRST_2024:isManagerOf rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Roma"/>
+        <KRST_2024:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</KRST_2024:age>
+        <KRST_2024:hasSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">500000</KRST_2024:hasSalary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Diego_Simeone -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Diego_Simeone">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Coach"/>
+        <KRST_2024:isManagerOf rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Atletico_Madrid"/>
+        <KRST_2024:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">54</KRST_2024:age>
+        <KRST_2024:hasSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">34000000</KRST_2024:hasSalary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Dmitrij_Rybolovlev -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Dmitrij_Rybolovlev">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#President"/>
+        <KRST_2024:isOwnerOf rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Monaco"/>
+        <KRST_2024:age rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">57</KRST_2024:age>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Dominik_Szoboszlai -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Dominik_Szoboszlai">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Player"/>
+        <KRST_2024:playFor rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Liverpool"/>
+        <KRST_2024:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24</KRST_2024:age>
+        <KRST_2024:goal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</KRST_2024:goal>
+        <KRST_2024:hasPosition>centrocampista</KRST_2024:hasPosition>
+        <KRST_2024:hasSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5600000</KRST_2024:hasSalary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Emirates_Stadium -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Emirates_Stadium">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Stadium"/>
+        <KRST_2024:capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">60704</KRST_2024:capacity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#England -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#England">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Enos_Stanley_Kroenke -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Enos_Stanley_Kroenke">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#President"/>
+        <KRST_2024:isOwnerOf rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Arsenal"/>
+        <KRST_2024:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">76</KRST_2024:age>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Enrique_Cerezo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Enrique_Cerezo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#President"/>
+        <KRST_2024:isOwnerOf rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Atletico_Madrid"/>
+        <KRST_2024:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">76</KRST_2024:age>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Etihad_Stadium -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Etihad_Stadium">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Stadium"/>
+        <KRST_2024:capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">53400</KRST_2024:capacity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#EuropaLeague -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#EuropaLeague">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#International"/>
+        <KRST_2024:takePlace rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Europe"/>
+        <KRST_2024:numberTeams rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">48</KRST_2024:numberTeams>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Europe -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Europe">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#FACup -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#FACup">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#National"/>
+        <KRST_2024:takePlace rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#England"/>
+        <KRST_2024:numberTeams rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">64</KRST_2024:numberTeams>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Florentino_Perez -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Florentino_Perez">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#President"/>
+        <KRST_2024:isOwnerOf rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Real_Madrid"/>
+        <KRST_2024:age rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">77</KRST_2024:age>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Florian_Wirtz -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Florian_Wirtz">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Player"/>
+        <KRST_2024:playFor rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Bayer_Leverkusen"/>
+        <KRST_2024:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</KRST_2024:age>
+        <KRST_2024:goal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</KRST_2024:goal>
+        <KRST_2024:hasPosition>centrocampista</KRST_2024:hasPosition>
+        <KRST_2024:hasSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1500000</KRST_2024:hasSalary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#France -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#France">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Francesco_Calzona -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Francesco_Calzona">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Coach"/>
+        <KRST_2024:isManagerOf rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Napoli"/>
+        <KRST_2024:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">55</KRST_2024:age>
+        <KRST_2024:hasSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">400000</KRST_2024:hasSalary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Germany -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Germany">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Gianluca_Ferrero -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Gianluca_Ferrero">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#President"/>
+        <KRST_2024:isOwnerOf rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Juventus"/>
+        <KRST_2024:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">60</KRST_2024:age>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Gianluca_Mancini -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Gianluca_Mancini">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Player"/>
+        <KRST_2024:playFor rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Roma"/>
+        <KRST_2024:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">26</KRST_2024:age>
+        <KRST_2024:goal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</KRST_2024:goal>
+        <KRST_2024:hasPosition>difensore</KRST_2024:hasPosition>
+        <KRST_2024:hasSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3600000</KRST_2024:hasSalary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Gianluigi_Donnarumma -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Gianluigi_Donnarumma">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Player"/>
+        <KRST_2024:playFor rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#PSG"/>
+        <KRST_2024:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</KRST_2024:age>
+        <KRST_2024:goal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</KRST_2024:goal>
+        <KRST_2024:hasPosition>portiere</KRST_2024:hasPosition>
+        <KRST_2024:hasSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10000000</KRST_2024:hasSalary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Harry_Kane -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Harry_Kane">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Player"/>
+        <KRST_2024:playFor rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Bayern_Monaco"/>
+        <KRST_2024:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</KRST_2024:age>
+        <KRST_2024:goal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">26</KRST_2024:goal>
+        <KRST_2024:hasPosition>attaccante</KRST_2024:hasPosition>
+        <KRST_2024:hasSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9000000</KRST_2024:hasSalary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Igor_Tudor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Igor_Tudor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Coach"/>
+        <KRST_2024:isManagerOf rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Lazio"/>
+        <KRST_2024:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">46</KRST_2024:age>
+        <KRST_2024:hasSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2500000</KRST_2024:hasSalary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Inter -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Inter">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Team"/>
+        <KRST_2024:playInStadium rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#San_Siro"/>
+        <KRST_2024:playsIn rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#ChampionsLeague"/>
+        <KRST_2024:playsIn rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#SerieA"/>
+        <KRST_2024:FoundationYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1908</KRST_2024:FoundationYear>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Italy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Italy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Jan-Christian_Dreesen -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Jan-Christian_Dreesen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#President"/>
+        <KRST_2024:isOwnerOf rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Bayern_Monaco"/>
+        <KRST_2024:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">56</KRST_2024:age>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Joan_Laporta -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Joan_Laporta">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#President"/>
+        <KRST_2024:isOwnerOf rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Barcellona"/>
+        <KRST_2024:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">61</KRST_2024:age>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Joshua_Kimmich -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Joshua_Kimmich">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Player"/>
+        <KRST_2024:playFor rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Bayern_Monaco"/>
+        <KRST_2024:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">26</KRST_2024:age>
+        <KRST_2024:goal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</KRST_2024:goal>
+        <KRST_2024:hasPosition>centrocampista</KRST_2024:hasPosition>
+        <KRST_2024:hasSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8100000</KRST_2024:hasSalary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Joško_Gvardiol -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Joško_Gvardiol">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Player"/>
+        <KRST_2024:playFor rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Manchester_City"/>
+        <KRST_2024:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">22</KRST_2024:age>
+        <KRST_2024:goal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</KRST_2024:goal>
+        <KRST_2024:hasPosition>difensore</KRST_2024:hasPosition>
+        <KRST_2024:hasSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7600000</KRST_2024:hasSalary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Jurgen_Klopp -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Jurgen_Klopp">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Coach"/>
+        <KRST_2024:isManagerOf rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Liverpool"/>
+        <KRST_2024:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">56</KRST_2024:age>
+        <KRST_2024:hasSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15000000</KRST_2024:hasSalary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Juventus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Juventus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Team"/>
+        <KRST_2024:playInStadium rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Allianz_Stadium"/>
+        <KRST_2024:playsIn rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#SerieA"/>
+        <KRST_2024:FoundationYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1897</KRST_2024:FoundationYear>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Kevin_De_Bruyne -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Kevin_De_Bruyne">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Player"/>
+        <KRST_2024:playFor rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Manchester_City"/>
+        <KRST_2024:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">31</KRST_2024:age>
+        <KRST_2024:goal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</KRST_2024:goal>
+        <KRST_2024:hasPosition>centrocampista</KRST_2024:hasPosition>
+        <KRST_2024:hasSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11000000</KRST_2024:hasSalary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Khaldun_al-Mubarak -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Khaldun_al-Mubarak">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#President"/>
+        <KRST_2024:isOwnerOf rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Manchester_City"/>
+        <KRST_2024:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">48</KRST_2024:age>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Khvicha_Kvaratskhelia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Khvicha_Kvaratskhelia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Player"/>
+        <KRST_2024:playFor rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Napoli"/>
+        <KRST_2024:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">22</KRST_2024:age>
+        <KRST_2024:goal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</KRST_2024:goal>
+        <KRST_2024:hasPosition>attaccante</KRST_2024:hasPosition>
+        <KRST_2024:hasSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1400000</KRST_2024:hasSalary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Kylian_Mbappè -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Kylian_Mbappè">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Player"/>
+        <KRST_2024:playFor rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#PSG"/>
+        <KRST_2024:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</KRST_2024:age>
+        <KRST_2024:goal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">29</KRST_2024:goal>
+        <KRST_2024:hasPosition>attaccante</KRST_2024:hasPosition>
+        <KRST_2024:hasSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25000000</KRST_2024:hasSalary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Lazio -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Lazio">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Team"/>
+        <KRST_2024:playInStadium rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Stadio_Olimpico"/>
+        <KRST_2024:playsIn rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#SerieA"/>
+        <KRST_2024:FoundationYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1900</KRST_2024:FoundationYear>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#LigaBBVA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#LigaBBVA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#National"/>
+        <KRST_2024:takePlace rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Spain"/>
+        <KRST_2024:numberTeams rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</KRST_2024:numberTeams>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#LigueOne -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#LigueOne">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#National"/>
+        <KRST_2024:takePlace rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#France"/>
+        <KRST_2024:numberTeams rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</KRST_2024:numberTeams>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Liverpool -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Liverpool">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Team"/>
+        <KRST_2024:playInStadium rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Anfield"/>
+        <KRST_2024:playsIn rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#CarabaoCup"/>
+        <KRST_2024:playsIn rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#EuropaLeague"/>
+        <KRST_2024:playsIn rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#PremiereLeague"/>
+        <KRST_2024:FoundationYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1892</KRST_2024:FoundationYear>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Lorenzo_Pellegrini -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Lorenzo_Pellegrini">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Player"/>
+        <KRST_2024:playFor rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Roma"/>
+        <KRST_2024:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">27</KRST_2024:age>
+        <KRST_2024:goal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</KRST_2024:goal>
+        <KRST_2024:hasPosition>centrocampista</KRST_2024:hasPosition>
+        <KRST_2024:hasSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4000000</KRST_2024:hasSalary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Luis_Enrique -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Luis_Enrique">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Coach"/>
+        <KRST_2024:isManagerOf rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#PSG"/>
+        <KRST_2024:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">54</KRST_2024:age>
+        <KRST_2024:hasSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8000000</KRST_2024:hasSalary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Manchester_City -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Manchester_City">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Team"/>
+        <KRST_2024:playInStadium rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Etihad_Stadium"/>
+        <KRST_2024:playsIn rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#ChampionsLeague"/>
+        <KRST_2024:playsIn rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#FACup"/>
+        <KRST_2024:playsIn rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#PremiereLeague"/>
+        <KRST_2024:FoundationYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1894</KRST_2024:FoundationYear>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Mario_Hermoso -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Mario_Hermoso">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Player"/>
+        <KRST_2024:playFor rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Atletico_Madrid"/>
+        <KRST_2024:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</KRST_2024:age>
+        <KRST_2024:goal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</KRST_2024:goal>
+        <KRST_2024:hasPosition>difensore</KRST_2024:hasPosition>
+        <KRST_2024:hasSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8330000</KRST_2024:hasSalary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Massimiliano_Allegri -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Massimiliano_Allegri">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Coach"/>
+        <KRST_2024:isManagerOf rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Juventus"/>
+        <KRST_2024:age rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">56</KRST_2024:age>
+        <KRST_2024:hasSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">9000000</KRST_2024:hasSalary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Mattia_Zaccagni -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Mattia_Zaccagni">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Player"/>
+        <KRST_2024:playFor rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Lazio"/>
+        <KRST_2024:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">28</KRST_2024:age>
+        <KRST_2024:goal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</KRST_2024:goal>
+        <KRST_2024:hasPosition>attaccante</KRST_2024:hasPosition>
+        <KRST_2024:hasSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2000000</KRST_2024:hasSalary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Mike_Maignan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Mike_Maignan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Player"/>
+        <KRST_2024:playFor rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Milan"/>
+        <KRST_2024:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">28</KRST_2024:age>
+        <KRST_2024:goal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</KRST_2024:goal>
+        <KRST_2024:hasPosition>portiere</KRST_2024:hasPosition>
+        <KRST_2024:hasSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2800000</KRST_2024:hasSalary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Mikel_Arteta -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Mikel_Arteta">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Coach"/>
+        <KRST_2024:isManagerOf rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Arsenal"/>
+        <KRST_2024:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">42</KRST_2024:age>
+        <KRST_2024:hasSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3640000</KRST_2024:hasSalary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Milan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Milan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Team"/>
+        <KRST_2024:playInStadium rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#San_Siro"/>
+        <KRST_2024:playsIn rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#EuropaLeague"/>
+        <KRST_2024:playsIn rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#SerieA"/>
+        <KRST_2024:FoundationYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1899</KRST_2024:FoundationYear>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Monaco -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Monaco">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Team"/>
+        <KRST_2024:playInStadium rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Stadio_Luigi_II"/>
+        <KRST_2024:playsIn rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#LigueOne"/>
+        <KRST_2024:FoundationYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1924</KRST_2024:FoundationYear>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Napoli -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Napoli">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Team"/>
+        <KRST_2024:playInStadium rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Stadio_Diego_Maradona"/>
+        <KRST_2024:playsIn rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#SerieA"/>
+        <KRST_2024:FoundationYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1926</KRST_2024:FoundationYear>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Nasser_Al-Khelaïfi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Nasser_Al-Khelaïfi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#President"/>
+        <KRST_2024:isOwnerOf rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#PSG"/>
+        <KRST_2024:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</KRST_2024:age>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Niccolò_Barella -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Niccolò_Barella">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Player"/>
+        <KRST_2024:playFor rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Inter"/>
+        <KRST_2024:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">27</KRST_2024:age>
+        <KRST_2024:goal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</KRST_2024:goal>
+        <KRST_2024:hasPosition>centrocampista</KRST_2024:hasPosition>
+        <KRST_2024:hasSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6000000</KRST_2024:hasSalary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#PSG -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#PSG">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Team"/>
+        <KRST_2024:playInStadium rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Parco_dei_Principi"/>
+        <KRST_2024:playsIn rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#ChampionsLeague"/>
+        <KRST_2024:playsIn rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#LigueOne"/>
+        <KRST_2024:FoundationYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1970</KRST_2024:FoundationYear>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Paolo_Scaroni -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Paolo_Scaroni">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#President"/>
+        <KRST_2024:isOwnerOf rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Milan"/>
+        <KRST_2024:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">77</KRST_2024:age>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Parco_dei_Principi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Parco_dei_Principi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Stadium"/>
+        <KRST_2024:capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">48583</KRST_2024:capacity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Pep_Guardiola -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Pep_Guardiola">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Coach"/>
+        <KRST_2024:isManagerOf rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Manchester_City"/>
+        <KRST_2024:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">53</KRST_2024:age>
+        <KRST_2024:hasSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">22400000</KRST_2024:hasSalary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#PremiereLeague -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#PremiereLeague">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#National"/>
+        <KRST_2024:numberTeams rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</KRST_2024:numberTeams>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Real_Madrid -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Real_Madrid">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Team"/>
+        <KRST_2024:playInStadium rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Santiago_Bernabeu"/>
+        <KRST_2024:playsIn rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#ChampionsLeague"/>
+        <KRST_2024:playsIn rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#LigaBBVA"/>
+        <KRST_2024:FoundationYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1902</KRST_2024:FoundationYear>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Roma -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Roma">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Team"/>
+        <KRST_2024:playInStadium rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Stadio_Olimpico"/>
+        <KRST_2024:playsIn rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#EuropaLeague"/>
+        <KRST_2024:playsIn rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#SerieA"/>
+        <KRST_2024:FoundationYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1927</KRST_2024:FoundationYear>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Ronald_Araujo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Ronald_Araujo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Player"/>
+        <KRST_2024:playFor rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Barcellona"/>
+        <KRST_2024:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</KRST_2024:age>
+        <KRST_2024:goal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</KRST_2024:goal>
+        <KRST_2024:hasPosition>difensore</KRST_2024:hasPosition>
+        <KRST_2024:hasSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7000000</KRST_2024:hasSalary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#San_Siro -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#San_Siro">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Stadium"/>
+        <KRST_2024:capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">75817</KRST_2024:capacity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Santiago_Bernabeu -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Santiago_Bernabeu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Stadium"/>
+        <KRST_2024:capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">81044</KRST_2024:capacity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#SerieA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#SerieA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#National"/>
+        <KRST_2024:takePlace rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Italy"/>
+        <KRST_2024:numberTeams rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</KRST_2024:numberTeams>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Simone_Inzaghi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Simone_Inzaghi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Coach"/>
+        <KRST_2024:isManagerOf rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Inter"/>
+        <KRST_2024:age rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">48</KRST_2024:age>
+        <KRST_2024:hasSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5500000</KRST_2024:hasSalary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Spain -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Spain">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Stadio_Diego_Maradona -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Stadio_Diego_Maradona">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Stadium"/>
+        <KRST_2024:capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">54726</KRST_2024:capacity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Stadio_Luigi_II -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Stadio_Luigi_II">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Stadium"/>
+        <KRST_2024:capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18523</KRST_2024:capacity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Stadio_Olimpico -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Stadio_Olimpico">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Stadium"/>
+        <KRST_2024:capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">72698</KRST_2024:capacity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Stanislav_Lobotka -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Stanislav_Lobotka">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Player"/>
+        <KRST_2024:playFor rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Napoli"/>
+        <KRST_2024:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">29</KRST_2024:age>
+        <KRST_2024:goal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</KRST_2024:goal>
+        <KRST_2024:hasPosition>centrocampista</KRST_2024:hasPosition>
+        <KRST_2024:hasSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2000000</KRST_2024:hasSalary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Stefano_Pioli -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Stefano_Pioli">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Coach"/>
+        <KRST_2024:isManagerOf rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Milan"/>
+        <KRST_2024:age rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">58</KRST_2024:age>
+        <KRST_2024:hasSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3500000</KRST_2024:hasSalary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Steven_Zhang -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Steven_Zhang">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#President"/>
+        <KRST_2024:isOwnerOf rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Inter"/>
+        <KRST_2024:age rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">52</KRST_2024:age>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Thomas_Tuchel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Thomas_Tuchel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Coach"/>
+        <KRST_2024:isManagerOf rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Bayern_Monaco"/>
+        <KRST_2024:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</KRST_2024:age>
+        <KRST_2024:hasSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12000000</KRST_2024:hasSalary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Tom_Werner -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Tom_Werner">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#President"/>
+        <KRST_2024:isOwnerOf rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Liverpool"/>
+        <KRST_2024:age rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">74</KRST_2024:age>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Wissam_Ben_Yedder -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Wissam_Ben_Yedder">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Player"/>
+        <KRST_2024:playFor rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Monaco"/>
+        <KRST_2024:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">33</KRST_2024:age>
+        <KRST_2024:goal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</KRST_2024:goal>
+        <KRST_2024:hasPosition>attaccante</KRST_2024:hasPosition>
+        <KRST_2024:hasSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1000000</KRST_2024:hasSalary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Xabi_Alonso -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Xabi_Alonso">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Coach"/>
+        <KRST_2024:isManagerOf rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Bayer_Leverkusen"/>
+        <KRST_2024:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">42</KRST_2024:age>
+        <KRST_2024:hasSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5000000</KRST_2024:hasSalary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Xavi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Xavi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Coach"/>
+        <KRST_2024:isManagerOf rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Barcellona"/>
+        <KRST_2024:age rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">44</KRST_2024:age>
+        <KRST_2024:hasSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3000000</KRST_2024:hasSalary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Yann_Sommer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Yann_Sommer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Player"/>
+        <KRST_2024:playFor rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Inter"/>
+        <KRST_2024:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">34</KRST_2024:age>
+        <KRST_2024:goal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</KRST_2024:goal>
+        <KRST_2024:hasPosition>portiere</KRST_2024:hasPosition>
+        <KRST_2024:hasSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4000000</KRST_2024:hasSalary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Coach"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#Player"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/3/KRST_2024#President"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
